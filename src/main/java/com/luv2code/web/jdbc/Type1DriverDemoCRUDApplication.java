@@ -28,7 +28,7 @@ public class Type1DriverDemoCRUDApplication {
 	public static void createEntry(Statement st,Scanner sc) throws Exception {
 		System.out.println("Enter the id to be created : "); 
 	    int id = sc.nextInt(); 
-		String queryString = "insert into employee values (" + id + ", 'sonal','mandana','sonal.mandana@love.com')";
+		String queryString = "insert into employee values (" + id + ", 'sonal','mandana','sonal.mandana@love.com',400000)";
 		int noofRow = st.executeUpdate(queryString);
 		System.out.println("inserted successfully " + noofRow + " row affected");
 		
